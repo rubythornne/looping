@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
   <title>Loop the Loop</title>
   <style type="text/css">
@@ -12,6 +12,9 @@
     .red {
       color: red;
     }
+     header h1 [
+      color: blue;
+      ]
   </style>
 </head>
 <body>
@@ -19,43 +22,34 @@
   <img id="roller" src="" alt="roller coaster">
   <script type="text/javascript">
     // Description:
-    // When complete, this program will ask the user how many roller coaster 
-rides
+    // When complete, this program will ask the user how many roller coaster rides
     // they'd like to go on, then execute a block of code that many times.
     // The block will output which "ride" they're on, and change which image
     // is displayed on the page. The images shown will cycle through a list
-    // of possible sources, though this happens so quickly that the user will 
-only see
+    // of possible sources, though this happens so quickly that the user will only see
     // the final one shown.
-    // There are explanatory comments thoughout. The work that still needs to be
-done
+    // There are explanatory comments thoughout. The work that still needs to bedone
     // is noted in TODO comments. Please complete this work.
     // an array of possible image source values
     var imageSources = [
-      "http://images.mentalfloss.com/sites/default/files/styles/width-
-constrained-728/public/503373-iStock-186293315.jpg",
-      "https://media4.s-nbcnews.com/j/newscms/2017_31/1270023/wonder-woman-
-roller-coaster-today-inline-170803_7e4934000dfd84cdbb6b2f4900a03988.today-
-inline-large.jpg",
-      "http://cdn.cnn.com/cnnnext/dam/assets/160520171710-07-stormchaser-jpg-
-best-coasters-super-169.jpg",
-      "https://thediabeticjourney.com/wp-content/uploads/2016/08/diabetes-
-rollercoaster.png"
+      "http://images.mentalfloss.com/sites/default/files/styles/width- constrained-728/public/503373-iStock-186293315.jpg",
+      "https://media4.s-nbcnews.com/j/newscms/2017_31/1270023/wonder-woman-roller-coaster-today-inline-170803_7e4934000dfd84cdbb6b2f4900a03988.today-inline-large.jpg",
+      "http://cdn.cnn.com/cnnnext/dam/assets/160520171710-07-stormchaser-jpg-best-coasters-super-169.jpg",
+      "https://thediabeticjourney.com/wp-content/uploads/2016/08/diabetes-rollercoaster.png"
     ]
     // select the <img> tag with id of "roller" from the HTML
-    var theImg = document.querySelector("img#roller");
+      var theImg = document.querySelector("img#roller");
     // set the src attribute of the img to be the first element in source array
-    theImg.setAttribute("src", imageSources[0]);
+      theImg.setAttribute("src", imageSources[0]);
     // TODO: set howMany variable to a value user inputs
-      var howMany
       var howMany = prompt ("How many rides?")
       console.log(howMany)
       var rideNum = parseInt (howMany)
       console.log(rideNum)
-      console.log(rideNum > 3)
+      console.log(rideNum > 2)
       var counter = 1;
     // TODO: execute this loop the number of times user requested
-    while( > 5){
+      while( ridenum = false) {
       console.log("Wheee! This is the ", counter, " time we've done this!");
       counter = counter +1;
       // find value of counter modulo length of sources array-
@@ -69,10 +63,8 @@ rollercoaster.png"
     // EXTRA CHALLENGES:
     // 1. Using JS, add a class of "red" to the <h1>.
     //    This only needs to be done once, so code should be outside loop.
-    // 2. Execute the loop only half as many times, or twice as many times, as 
-the user requested.
-    // 3. Add a pause to each loop, so user can see each image as it cycles 
-past.
+    // 2. Execute the loop only half as many times, or twice as many times, as the user requested.
+    // 3. Add a pause to each loop, so user can see each image as it cycles past.
     //    This is a difficult one!
   </script>
 </body>
